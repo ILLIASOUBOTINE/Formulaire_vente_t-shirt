@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire - vente de t-shirt</title>
+
+    <style>
+        button {
+            margin: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Client</legend>
+        <div>
+          <label for="NP">Nom et prenom :</label>
+          <input
+            type="text"
+            id="NP"
+            placeholder="Nom et prenom"
+            pattern="[A-Z]{2,}\s[A-Z][a-z]{1,}"
+          />
+        </div>
+        <div>
+          <label for="Adress">Adresse:</label>
+          <input type="text" id="Adress" />
+        </div>
+        <div>
+          <label for="CP">Code Postal :</label>
+          <input type="text" id="CP" pattern="[0-9]{5}" />
+        </div>
+        <div>
+          <label for="Pays">Pays :</label>
+          <input type="text" id="Pays" value="France" disabled="faulse" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Command</legend>
+        <div>
+          <label for="Model">Model :</label>
+          <input type="text" id="Model" value="Road 66" disabled="faulse" />
+        </div>
+        <div>
+            
+                <label for="Taille">Taille:</label>
+                <br>
+                <input type="range" id="Taille"  value="2" min="1" max="4" step="1"/> 
+                <br>
+                <span>S &nbsp &nbsp &nbsp M &nbsp &nbsp &nbsp L &nbsp &nbsp &nbsp XL</ы>
+                
+                
+            
+          
+
+        </div>
+           
+            <label for="Quantite">Quantite :</label>
+            <input type="number" id="Quantite" value="1" min="1" max="165" step="3"/>
+                
+            
+            
+
+        </div>
+      </fieldset>
+      <button type="submit">Commander</button>
+      <button type="reset">Recommencer</button>
+    </form>
+  </body>
+</html>
